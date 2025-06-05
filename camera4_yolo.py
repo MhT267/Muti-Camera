@@ -261,7 +261,7 @@ class CameraApp(QMainWindow):
             y, x = row * grid_size, col * grid_size
 
             # 给图像添加标签，确保标签位置不受翻转影响
-            cv2.putText(image, f"{label}nm", (x + 5, y + 25),  # 将标签放置在左上角
+            cv2.putText(image, f"{label}nm", (x + 10, y + 30),  # 将标签放置在左上角
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, 255, 2)
 
         return image
