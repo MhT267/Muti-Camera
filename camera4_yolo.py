@@ -248,7 +248,7 @@ class CameraApp(QMainWindow):
 
             # 拼接图像
             grid[y:y + grid_size, x:x + grid_size] = ch_resized
-            # cv2.putText(grid, f"{labels[idx]}nm", (x + 5, y + 25),  # 给每个通道添加波长标签
+            # cv2.putText(grid, f"{labels[idx]}nm", (x + 10, y + 30),  # 给每个通道添加波长标签
             #             cv2.FONT_HERSHEY_SIMPLEX, 0.7, 255, 2)
 
         return grid
